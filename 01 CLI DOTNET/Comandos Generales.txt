@@ -1,0 +1,52 @@
+Correr App
+    -- dotnet run --project src/CorrerApp/CorrerApp.csproj
+Publicar app 
+    -- dotnet publish -c Release -r win10-x64 --self-contained
+Variables de Entorno 
+    --  $env:DOTNET_STARTUP_HOOKS=""
+Crear un conjunto de proyectos 
+    -- dotnet new sln -o CorrerApp
+
+Crear archivo de git ignore
+    -- dotnet new gitignore
+Agregar un paquete de nuget
+    -- dotnet add package Microsoft.Extensions.Configuration.Json
+Agregar un proyecto a un conjunto de proyectos
+    -- dotnet sln add src/CorrerApp/CorrerApp.csproj
+
+conectar una base de datos con EF
+    -- dotnet ef dbcontext scaffold "Server=.\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c NorthwindContext
+    -- dotnet ef dbcontext scaffold "Server=(localdb)\mssqllocaldb;Database=Cars;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer  -o Models -c CarsContext
+    -- dotnet ef dbcontext scaffold "Server=AWUEA1GDLSQL41;Database=TE_TestProductivity;Trusted_Connection=True;Trust Server Certificate=true;" Microsoft.EntityFrameworkCore.SqlServer  -o C:\Public\TestProjects\WebApi\TodoApi\Infrastructure\Persistance -c TE_TestProductivityContext
+agregar un  modelo a la base de datos con EF
+    -- dotnet ef migrations add InitialCreate
+    -- dotnet ef database update
+
+Desbloquear archivos bloqueados por .NET Core
+    -- taskkill /f /pid 29048
+llenar base de datos con datos de prueba
+    -- dotnet ef dbcontext seed
+    
+Crear un proyecto de consola
+    -- dotnet new console -o NombreProyecto
+Crear un proyecto de clase
+    -- dotnet new classlib -o NombreProyecto
+Crear un proyecto de web
+    -- dotnet new web -o NombreProyecto
+Crear un proyecto de webapi
+    -- dotnet new webapi -o NombreProyecto
+Crear un proyecto de mvc
+    -- dotnet new mvc -o NombreProyecto
+Crear un proyecto de razor
+    -- dotnet new razor -o NombreProyecto
+Crear un proyecto de blazor
+    -- dotnet new blazor -o NombreProyecto
+Crear un proyecto de blazorwasm
+    -- dotnet new blazorwasm -o NombreProyecto
+Crear un proyecto de blazorserver
+    -- dotnet new blazorserver -o NombreProyecto
+Crear un proyecto de angular
+    -- dotnet new angular -o NombreProyecto
+Crear un proyecto de react
+    -- dotnet new react -o NombreProyecto   
+    

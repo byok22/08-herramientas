@@ -1,0 +1,26 @@
+Inicializar un repositorio local
+    -- git init
+Crear Archivo gitnore para dotnet
+    --dotnet new gitignore
+Guardar cambios temporalmente 
+    --git stash save "Ref"
+Aplicar cambios temporales
+    --git stash apply
+Crear una nueva rama y cambiar a ella con git
+    -- git switch <nombre de la rama> -c
+Hacer merge desde la rama actual a la rama especificada
+    -- git merge <nombre de la rama>
+Eliminar una rama
+    -- git branch -d <nombre de la rama>
+Eliminar una rama forzada
+    -- git branch -D <nombre de la rama>
+Cambiar de rama
+    -- git switch <nombre de la rama>
+Regresar a un commot anterior
+    -- git reset --hard <id del commit>
+Regresar a un commot anterior sin borrar cambios 
+    -- git reset --soft <id del commit>
+Regresar a un commot anterior sin borrar cambios y sin agregarlos al stage
+    -- git reset --mixed <id del commit>
+Regresar a un commit con cherry pic
+    -- git cherry-pick <id del commit>

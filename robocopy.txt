@@ -1,0 +1,1 @@
+ROBOCOPY <Source> <Destination> /E /R:1 /W:1 /MT:64 /V
